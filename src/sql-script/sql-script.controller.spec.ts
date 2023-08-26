@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SqlScriptsController } from './sql-scripts.controller';
+import { SqlScriptController } from './sql-script.controller';
 
 describe('SqlScriptsController', () => {
-  let controller: SqlScriptsController;
+  let controller: SqlScriptController;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      controllers: [SqlScriptsController],
+      controllers: [SqlScriptController],
     }).compile();
 
-    controller = module.get<SqlScriptsController>(SqlScriptsController);
+    controller = module.get<SqlScriptController>(SqlScriptController);
   });
 
   it('should be defined', () => {
